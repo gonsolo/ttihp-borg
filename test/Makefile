@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v FireSim-generated.sv
+PROJECT_SOURCES = project.v FireSim-generated.sv gonsolo.v
 
 ifneq ($(GATES),yes)
 
