@@ -24,4 +24,9 @@ module tt_um_gonsolo_borg(
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
 
+  // Gonsolo stuff
+  F1Shim firesim_top(
+    .clock(clk),
+    .reset(rst_n)
+  );
 endmodule
